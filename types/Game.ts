@@ -9,5 +9,7 @@ export type Game = {
   release_date: string;
   aliases: string | null;
   summary: string;
-  screenshot_path: string;
+  image: {
+    original_url: string;
+  };
 }

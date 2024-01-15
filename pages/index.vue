@@ -14,7 +14,7 @@
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 self-center gap-x-10 gap-y-10 mb-10">
         <div v-for="game in data?.results">
-          {{ game.name }}
+          <GameCard :game="game"></GameCard>
         </div>
       </div>
     </div>
@@ -22,7 +22,7 @@
 </template>
 
 <script setup lang="ts">
-import type { ApiResponse } from '~/types/ApiResponse';
+import type { Response } from '~/types/Response';
 
 const searchTerm = ref('');
 
@@ -30,5 +30,8 @@ const url = computed(() => {
   return `api/games/search?query=${searchTerm.value}`;
 });
 
-const { data } = await useFetch<ApiResponse>(url);
+
+
+const { data } = await useFetch<Response>(url);
+console.log(data);
 </script>

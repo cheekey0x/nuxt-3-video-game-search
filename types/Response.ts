@@ -1,6 +1,6 @@
 import type { Game } from "./Game";
 
-export type ApiResponse = {
+export type Response = {
   page: number;
   results: Game[];
   total_pages: number;

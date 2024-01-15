@@ -5,6 +5,9 @@ export default defineNuxtConfig({
   ],
   runtimeConfig: {
     apiKey: process.env.EXTERNAL_API_KEY,
-    apiBaseUrl: process.env.API_BASE_URL
+    apiBaseUrl: process.env.API_BASE_URL,
+    public: {
+      imgBaseUrl: ''
+    }
   }
 })
