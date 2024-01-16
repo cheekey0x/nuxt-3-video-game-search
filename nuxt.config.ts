@@ -1,7 +1,8 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   modules: [
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@vueuse/nuxt'
   ],
   runtimeConfig: {
     apiKey: process.env.EXTERNAL_API_KEY,
