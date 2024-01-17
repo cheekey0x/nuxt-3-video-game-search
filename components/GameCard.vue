@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full w-64 border flex flex-col text-center justify-end">
+  <div class="h-full w-64 border flex flex-col text-white text-center justify-end bg-neutral-600">
     <div class="h-full mb-5 bg-transparent hover:bg-gray-200 flex justify-center">
       <div class="flex">
         <img 

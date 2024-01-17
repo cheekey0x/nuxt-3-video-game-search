@@ -1,6 +1,6 @@
 <template>
-  <nav class="flex justify-center mt-10">
-    <NuxtLink to="/" class="px-4 py-2 border rounded-lg">
+  <nav class="flex justify-center bg-white py-12">
+    <NuxtLink to="/" class="px-4 py-2 bg-gray-400 border rounded-lg">
       Home Page
     </NuxtLink>
   </nav>
@@ -10,7 +10,7 @@
   
   <hr class="mb-7">
 
-  <div class="text-center">
+  <div class="text-white text-center">
     <h2 class="mb-5">
       Built with Nuxt 3 by <a href="https://www.brandonwinger-air.com" target="_blank" class="font-semibold">Brandon Winger-Air</a> using <a href="https://www.giantbomb.com/api/" target="_blank" class="font-semibold">external API</a>.
     </h2>
