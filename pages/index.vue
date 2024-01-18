@@ -31,14 +31,14 @@
 
       <div class="z-0 self-center pt-10">
         <div 
-          v-if="showResults" 
+          v-if="showResults && data?.results[0]" 
           class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-10 gap-y-10 mb-10"
         >
           <div v-for="game in data?.results">
             <GameCard :game="game"></GameCard>
           </div>
         </div>
-        <div v-if="!showResults" class="mb-10 text-center">
+        <div v-else class="mb-10 text-center">
           <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-10 gap-y-10 mb-10">
             <img src="/254x356-gamepad.png" alt="">
             <img src="/254x356-gamepad.png" alt="">
