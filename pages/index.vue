@@ -6,7 +6,7 @@
           <h1 class="text-3xl font-bold text-white">Video Games</h1>
         </div>
         <div class="flex justify-center mb-10">
-          <div class="border rounded-md border-neutral-400 mr-1">
+          <div class="border rounded-md border-neutral-400 mr-2">
             <input 
               class="px-2 py-1 border-0 min-w-64"
               v-model="searchTerm"
@@ -22,14 +22,14 @@
           </div>
           <button 
             @click="!showResults ? showResults = !showResults : showResults = showResults; hideSuggestions = true" 
-            class="h-9 px-4 bg-neutral-500 text-white border border-neutral-700 active:border-neutral-500 font-semibold rounded-lg"
+            class="h-9 px-3 bg-neutral-500 text-white border border-neutral-700 active:border-neutral-500 font-semibold rounded-lg"
           >
-            Search
+            Search <span class="text-sm">🔎</span>
           </button>
         </div>
       </div>
 
-      <div class="z-0 self-center pt-10">
+      <div class="z-0 self-center pt-10 min-content-height">
         <div 
           v-if="showResults && data?.results[0]" 
           class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-10 gap-y-10 mb-10"
@@ -73,3 +73,9 @@ const { data } = await useFetch<Response>(url);
 const showResults = ref(false);
 const hideSuggestions = ref(true);
 </script>
+
+<style>
+.min-content-height {
+  min-height: 832px;
+}
+</style>
