@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="flex flex-col">
-      <div class="bg-emerald-600 pt-6">
+      <div class="bg-red-500 pt-6 border-b border-neutral-400">
         <div class="mb-7 text-center">
           <h1 class="text-3xl font-bold text-white">Video Games</h1>
         </div>
@@ -22,7 +22,7 @@
           </div>
           <button 
             @click="!showResults ? showResults = !showResults : showResults = showResults; hideSuggestions = true" 
-            class="h-9 px-4 bg-cyan-500 text-white font-semibold rounded-lg"
+            class="h-9 px-4 bg-neutral-500 text-white border border-neutral-700 active:border-neutral-500 font-semibold rounded-lg"
           >
             Search
           </button>
