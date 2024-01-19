@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="background-img">
     <div class="flex flex-col">
       <div class="bg-red-500 pt-6 border-b border-neutral-400">
         <div class="mb-7 text-center">
@@ -75,6 +75,13 @@ const hideSuggestions = ref(true);
 </script>
 
 <style>
+.background-img {
+  background: linear-gradient(rgba(65, 65, 65, 0.35),rgba(125, 125, 125, 0.35)), url('/video-game-system.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+
 .min-content-height {
   min-height: 832px;
 }
