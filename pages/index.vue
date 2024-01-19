@@ -22,7 +22,7 @@
           </div>
           <button 
             @click="!showResults ? showResults = !showResults : showResults = showResults; hideSuggestions = true" 
-            class="h-9 px-3 bg-neutral-500 text-white border border-neutral-700 active:border-neutral-500 font-semibold rounded-lg"
+            class="h-9 px-3 bg-neutral-500 hover:bg-neutral-400 active:bg-neutral-500 text-white border border-neutral-700 active:border-neutral-500 font-semibold rounded-lg"
           >
             Search <span class="text-sm">🔎</span>
           </button>

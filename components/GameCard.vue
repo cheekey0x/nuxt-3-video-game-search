@@ -35,7 +35,7 @@ const config = useRuntimeConfig();
 const imgPath = computed(() => props.game?.image.original_url != null ? `${config.public.imgBaseUrl}${props.game.image.original_url}` : 'https://via.placeholder.com/300x500');
 </script>
 
-<style>
+<style scoped>
 img {
     max-height: 100%;
     max-width: 100%;
