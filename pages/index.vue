@@ -22,7 +22,7 @@
           </div>
           <button 
             @click="!showResults ? showResults = !showResults : showResults = showResults; hideSuggestions = true" 
-            class="h-9 px-3 bg-neutral-500 hover:bg-neutral-400 active:bg-neutral-500 text-white border border-neutral-700 active:border-neutral-500 font-semibold rounded-lg"
+            class="h-9 px-3 bg-neutral-400 active:bg-neutral-500 text-white border border-neutral-700 hover:border-black active:border-black font-semibold rounded-lg"
           >
             Search <span class="text-sm">🔎</span>
           </button>
@@ -76,7 +76,7 @@ const hideSuggestions = ref(true);
 
 <style>
 .background-img {
-  background: linear-gradient(rgba(65, 65, 65, 0.35),rgba(125, 125, 125, 0.35)), url('/video-game-system.jpg');
+  background: linear-gradient(rgba(125, 125, 125, 0.35),rgba(125, 125, 125, 0.35)), url('/video-game-system.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 100% 50%;
