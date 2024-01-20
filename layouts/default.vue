@@ -2,7 +2,7 @@
   <nav class="h-20 flex justify-between bg-white border-b-2 border-black pl-4 md:pl-6 pr-2 md:pr-4 py-4 text-white">
     <img src="/gaming-pc-logo.png" alt="gaming logo" class="w-14 h-14 self-center">
 
-    <NuxtLink to="/" class="h-12 px-4 pt-2 ml-11 bg-gray-400 border border-neutral-800 rounded-lg self-center">
+    <NuxtLink to="/" class="h-12 px-4 pt-2 ml-11 bg-slate-500 border border-neutral-800 rounded-lg self-center">
       Home Page
     </NuxtLink>
   </nav>

@@ -40,16 +40,16 @@
         </div>
         <div v-else class="mb-10 text-center">
           <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-10 gap-y-10 mb-10">
-            <img src="/254x356-gamepad.png" alt="">
-            <img src="/254x356-gamepad.png" alt="">
-            <img src="/254x356-gamepad.png" alt="">
-            <img src="/254x356-gamepad.png" alt="">
-            <img src="/254x356-gamepad.png" alt="">
-            <img src="/254x356-gamepad.png" alt="">
-            <img src="/254x356-gamepad.png" alt="">
-            <img src="/254x356-gamepad.png" alt="">
-            <img src="/254x356-gamepad.png" alt="">
-            <img src="/254x356-gamepad.png" alt="">
+            <img src="/254x356-gamepad.png" alt="" class="border border-neutral-100">
+            <img src="/254x356-gamepad.png" alt="" class="border border-neutral-100">
+            <img src="/254x356-gamepad.png" alt="" class="border border-neutral-100">
+            <img src="/254x356-gamepad.png" alt="" class="border border-neutral-100">
+            <img src="/254x356-gamepad.png" alt="" class="border border-neutral-100">
+            <img src="/254x356-gamepad.png" alt="" class="border border-neutral-100">
+            <img src="/254x356-gamepad.png" alt="" class="border border-neutral-100">
+            <img src="/254x356-gamepad.png" alt="" class="border border-neutral-100">
+            <img src="/254x356-gamepad.png" alt="" class="border border-neutral-100">
+            <img src="/254x356-gamepad.png" alt="" class="border border-neutral-100">
           </div>
         </div>
       </div>
