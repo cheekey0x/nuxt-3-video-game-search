@@ -6,7 +6,7 @@
           <h1 class="text-3xl font-bold text-white">Video Games</h1>
         </div>
         <div class="flex justify-center mb-10">
-          <div class="border rounded-md border-neutral-400 mr-2">
+          <div class="border rounded-md border-neutral-400 border-b-0 mr-2">
             <input 
               class="px-2 py-1 border-0 min-w-64"
               v-model="searchTerm"
