@@ -5,10 +5,6 @@
     <NuxtLink to="/" class="h-12 px-4 pt-2 ml-11 bg-gray-400 border border-neutral-800 rounded-lg self-center">
       Home Page
     </NuxtLink>
-
-    <button class="h-12 bg-emerald-400 hover:bg-emerald-500 px-4 border border-neutral-800 rounded-md hover:text-neutral-100 font-semibold self-center">
-      <a href="https://github.com/BrandonWingerAir/nuxt-3-video-game-search" target="_blank">GitHub 💻</a>
-    </button>
   </nav>
   <main>
     <slot/>
@@ -21,8 +17,8 @@
 
     <hr width="325" class="mx-auto mb-4">
 
-    <h3>
+    <button class="h-12 bg-emerald-400 hover:bg-emerald-500 px-4 border border-neutral-800 rounded-md text-white hover:text-neutral-100 font-semibold self-center">
       <a href="https://github.com/BrandonWingerAir/nuxt-3-video-game-search" target="_blank">GitHub 💻</a>
-    </h3>
+    </button>
   </div>
 </template>
