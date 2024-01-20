@@ -12,7 +12,7 @@
 
   <div class="bg-white text-center py-7 border-t-4 border-t-red-600 border-b-2 md:border-b-4 border-b-neutral-900">
     <h2 class="mb-5">
-      Built with Nuxt 3 by <a href="https://www.brandonwinger-air.com" target="_blank" class="font-semibold">Brandon Winger-Air</a> using <a href="https://www.giantbomb.com/api/" target="_blank" class="font-semibold">external API</a>.
+      A study project built with Nuxt 3 by <a href="https://www.brandonwinger-air.com" target="_blank" class="font-semibold">Brandon Winger-Air</a> using an <a href="https://www.giantbomb.com/api/" target="_blank" class="font-semibold">external API</a>.
     </h2>
 
     <hr width="325" class="mx-auto mb-4">

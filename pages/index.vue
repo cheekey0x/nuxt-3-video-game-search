@@ -37,6 +37,19 @@
           <div v-for="game in data?.results">
             <GameCard :game="game"></GameCard>
           </div>
+
+          <!-- TODO: Requires custom results pagination -->
+          <!-- <div v-if="data?.results.length" class="flex justify-center"> -->
+            <!-- <button v-if="!disablePrevious" @click="page--" class="px-4 py-2 text-m border rounded-lg">
+              Prev
+            </button>
+            <div class="px-4 py-2 text-m border rounded-lg">
+
+            </div>
+          <button v-if="!disableNext" @click="page++" class="px-4 py-2 text-m border rounded-lg">
+              Next
+            </button> -->
+          <!-- </div> -->
         </div>
         <div v-else class="mb-10 text-center">
           <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-10 gap-y-10 mb-10">
@@ -61,6 +74,17 @@
 import type { Response } from '~/types/Response';
 
 const searchTerm = ref('');
+
+// TODO: Requires custom results pagination
+// const page = ref(1);
+
+// const disabledPrevious = computed(() => {
+//   return page.value === 1;
+// });
+
+// const disableNext = computed(() => {
+//   return page.value + 1 === data.value?.total_pages;
+// });
 
 const debouncedSearchTerm = refDebounced(searchTerm, 300);
 

@@ -1,6 +1,6 @@
 <template>
-  <div class="h-full w-64 border flex flex-col text-white text-center justify-end bg-neutral-600">
-    <div class="h-full mb-5 bg-transparent hover:bg-gray-200 flex justify-center">
+  <div class="h-full w-64 border flex flex-col text-center justify-end bg-neutral-300">
+    <div class="h-full bg-transparent hover:bg-gray-200 flex justify-center">
       <div class="flex">
         <img 
           :src="imgPath" 
@@ -9,7 +9,7 @@
         />
       </div>
     </div>
-    <div class="text-lg pb-3">
+    <div class="text-lg bg-white py-4">
       <p>{{ game?.name }}</p>
     </div>
     <!-- <p class="text-m text-gray-500 break-words text-wrap truncate overflow-hidden px-2">
