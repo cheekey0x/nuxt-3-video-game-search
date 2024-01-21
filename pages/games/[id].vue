@@ -29,7 +29,10 @@ const route = useRoute();
 const config = useRuntimeConfig();
 const gameId = computed(() => route.params.id);
 
-const gameUrl = `http://localhost:3000/api/games/${gameId.value}`;
+const gameUrl = `${config.public.fetchBaseUrl}api/games/${gameId.value}`;
+
+console.log(gameUrl);
+
 
 const { data } = await useFetch<GameResults>(gameUrl);
 

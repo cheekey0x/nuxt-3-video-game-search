@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     apiKey: process.env.EXTERNAL_API_KEY,
     apiBaseUrl: process.env.API_BASE_URL,
     public: {
-      imgBaseUrl: ''
+      fetchBaseUrl: process.env.API_FETCH_BASE_URL
     }
   }
 })

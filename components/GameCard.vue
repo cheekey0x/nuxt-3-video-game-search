@@ -32,9 +32,7 @@ const props = defineProps({
   }
 });
 
-const config = useRuntimeConfig();
-
-const imgPath = computed(() => props.game?.image.original_url != null ? `${config.public.imgBaseUrl}${props.game?.image.original_url}` : '/254x356-gamepad.png');
+const imgPath = computed(() => props.game?.image.original_url != null ? props.game?.image.original_url : '/254x356-gamepad.png');
 </script>
 
 <style scoped>
