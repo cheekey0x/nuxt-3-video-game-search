@@ -33,6 +33,5 @@ const gameUrl = `http://localhost:3000/api/games/${gameId.value}`;
 
 const { data } = await useFetch<GameResults>(gameUrl);
 
-// const imgUrl = computed(() => data.value?.image.original_url ? `${config.public.imgBaseUrl}/${data.value?.image.original_url}` : '/254x356-gamepad.png');
-const imgUrl = '/254x356-gamepad.png';
+const imgUrl = computed(() => data.value?.results.image.original_url ? data.value?.results.image.original_url : '/254x356-gamepad.png');
 </script>
