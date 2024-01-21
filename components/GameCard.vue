@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full w-64 border flex flex-col text-center justify-end bg-neutral-300">
+  <NuxtLink :to="`/games/${game?.id}`" class="h-full w-64 border flex flex-col text-center justify-end bg-neutral-300">
     <div class="h-full bg-transparent hover:bg-gray-200 flex justify-center">
       <div class="flex">
         <img 
@@ -12,10 +12,12 @@
     <div class="text-lg bg-white py-4">
       <p>{{ game?.name }}</p>
     </div>
+
+    <!-- TODO: Show on hover? -->
     <!-- <p class="text-m text-gray-500 break-words text-wrap truncate overflow-hidden px-2">
-      {{ game?.summary }}
+      {{ game?.deck }}
     </p> -->
-  </div>
+  </NuxtLink>
 </template>
 
 <script setup lang="ts">
@@ -32,7 +34,7 @@ const props = defineProps({
 
 const config = useRuntimeConfig();
 
-const imgPath = computed(() => props.game?.image.original_url != null ? `${config.public.imgBaseUrl}${props.game.image.original_url}` : 'https://via.placeholder.com/300x500');
+const imgPath = computed(() => props.game?.image.original_url != null ? `${config.public.imgBaseUrl}${props.game?.image.original_url}` : '/254x356-gamepad.png');
 </script>
 
 <style scoped>

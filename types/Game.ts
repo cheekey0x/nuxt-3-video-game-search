@@ -1,13 +1,12 @@
 export type Game = {
-  id: number;
+  id: string;
   name: string;
-  genre: string;
-  platforms: {
-    id: number;
-    name: string;
+  genres: {
+    genre: string;
   }[];
-  release_date: string;
-  aliases: string | null;
+  concepts: string,
+  original_release_date: string;
+  deck: string | null;
   summary: string;
   image: {
     original_url: string;

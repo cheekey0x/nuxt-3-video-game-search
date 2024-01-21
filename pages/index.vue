@@ -16,7 +16,7 @@
             />
             <div v-if="data?.results[0] && !hideSuggestions" class="px-2 pb-2 absolute z-20 bg-white border min-w-64">
               <ul v-for="game in data?.results">
-                <li class="py-1">{{ game.name }}</li>
+                <!-- <li class="py-1">{{ game.name }}</li> -->
               </ul>
             </div>
           </div>
