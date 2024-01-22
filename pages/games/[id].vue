@@ -1,9 +1,9 @@
 <template>
-  <div class="flex flex-col px-20 mt-10">
-    <div class="grid grid-cols-7 gap-1">
-      <img :src="imgUrl" alt="" class="col-span-2">
+  <div class="flex flex-col px-14 md:px-20 mt-10">
+    <div class="grid md:grid-cols-7 md:gap-1">
+      <img :src="imgUrl" alt="" class="col-span-3 md:col-span-2 mb-4">
 
-      <div class="flex flex-col col-span-3 ml-4">
+      <div class="flex flex-col col-span-3 md:ml-4">
         <h2 class="text-4xl font-sans font-bold mb-5">
           {{ data?.results.name }}
         </h2>
