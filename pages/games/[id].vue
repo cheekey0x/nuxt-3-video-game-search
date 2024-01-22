@@ -31,9 +31,6 @@ const gameId = computed(() => route.params.id);
 
 const gameUrl = `${config.public.fetchBaseUrl}api/games/${gameId.value}`;
 
-console.log(gameUrl);
-
-
 const { data } = await useFetch<GameResults>(gameUrl);
 
 const imgUrl = computed(() => data.value?.results.image.original_url ? data.value?.results.image.original_url : '/254x356-gamepad.png');
