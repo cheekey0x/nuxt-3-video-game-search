@@ -3,9 +3,12 @@ export type GameResults = {
     id: string;
     name: string;
     genres: {
-      genre: string;
+      name: string;
     }[];
-    concepts: string,
+    concepts: {
+      id: string;
+      name: string;
+    }[];
     original_release_date: string;
     deck: string | null;
     summary: string;
