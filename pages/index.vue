@@ -2,11 +2,13 @@
   <div class="background-img">
     <div class="flex flex-col">
       <div class="bg-red-500 pt-6 border-b border-neutral-400">
-        <div class="mb-7 text-center">
-          <h1 class="text-3xl font-bold text-white">Video Games</h1>
+        <div class="mb-5 text-center">
+          <h1 class="text-2xl font-bold text-white">Game Development Guide 📚</h1>
+          <hr class="mt-6">
         </div>
-        <div class="flex justify-center mb-10">
-          <div class="border rounded-md border-neutral-400 border-b-0 mr-2">
+        <div class="md:flex justify-center mb-10 px-1">
+          <h3 class="text-lg font-bold text-white text-center mb-6 md:mb-0 md:mr-2 mt-1">Inspiration Concepts:</h3>
+          <div class="inline-block border rounded-md border-neutral-400 border-b-0 mr-2">
             <input 
               class="px-2 py-1 border-0 min-w-64"
               v-model="searchTerm"
