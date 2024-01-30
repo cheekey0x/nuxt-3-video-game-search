@@ -6,6 +6,7 @@
           <h1 class="text-2xl font-bold text-white">Game Development Guide 📚</h1>
           <hr class="mt-6">
         </div>
+        
         <div class="md:flex justify-center mb-10 px-1">
           <h3 class="text-lg font-bold text-white text-center mb-6 md:mb-0 md:mr-2 mt-1">Inspiration Concepts:</h3>
           <div class="inline-block border rounded-md border-neutral-400 border-b-0 mr-2">
