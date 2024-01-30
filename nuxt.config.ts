@@ -2,7 +2,8 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   modules: [
     '@nuxtjs/tailwindcss',
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
+    'nuxt-lazy-load'
   ],
   runtimeConfig: {
     apiKey: process.env.EXTERNAL_API_KEY,
